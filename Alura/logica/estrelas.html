@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    let linha = 0;
+    let asteriscos = 0;
+    let max = 32;
+
+    for(i = 1; i <= max; i++) {
+        for(j = 1; j <= max; j++) {
+            document.write("*");
+            asteriscos++;
+        }
+        mostra("");
+        linha++;
+    }
+    console.log(linha);
+    console.log(asteriscos);
+</script>

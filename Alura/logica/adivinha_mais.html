@@ -1,0 +1,84 @@
+<meta charset="UTF-8">
+
+
+
+<script>
+ /*   function verifica() {
+        let achou = false;
+        for(i = 0; i < segredos.length; i++) {
+            if(input.value == segredos[i]) {
+            alert("Você acertou!");
+            achou = true;
+            break;
+            }
+        }
+        if(achou == false) {
+            alert("Você errou!");
+        }
+        input.value = "";
+        input.focus();
+    }
+
+    function sorteia() {
+        return Math.round(Math.random() * 10)
+    }
+
+    function sorteiaNumeros (quantidade) {
+        let segredos = [];
+        let i = 1;
+
+        while(i < quantidade) {
+            let numeroAleatorio = sorteia();
+
+            if(numeroAleatorio != 0) {
+                let achou = false;
+
+                for(i = 0; i < segredos.length; i++) {
+                    if(segredos[i] == numeroAleatorio) {
+                        achou = true;
+                        break;
+                    }
+                }
+
+                if(achou == false) {
+                    segredos.push(numeroAleatorio);
+                    i++;
+                }
+            }
+            
+        }
+        return segredos;
+    }
+    let segredos = sorteiaNumeros(10);
+    console.log(segredos);
+    let input = document.querySelector("input");
+    input.focus();
+    let button = document.querySelector("button");
+
+    button.onclick = verifica;
+*/
+
+    var ingredientes = [];
+
+    var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
+
+    var contador = 1;
+
+    while( contador <= quantidade) {
+        let achou = false;
+        var ingrediente = prompt("Informe o ingrediente " + contador);
+
+        for(i = 0; i < ingredientes.length; i++) {
+            if(ingrediente == ingredientes[i]){
+                achou = true;
+                break;
+            }  
+        }
+        if(achou == false) {
+            ingredientes.push(ingrediente);
+            contador++;
+        }
+    }
+
+    console.log(ingredientes);
+</script>
